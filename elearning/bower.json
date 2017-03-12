@@ -1,0 +1,22 @@
+{
+  "name": "elearning",
+  "homepage": "https://github.com/ebinezerp/collebarationproject",
+  "authors": [
+    "ebinezer <ebinezer.p87@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.3",
+    "angular-route": "^1.6.3"
+  }
+}
