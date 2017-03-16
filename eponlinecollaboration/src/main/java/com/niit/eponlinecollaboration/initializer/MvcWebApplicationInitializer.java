@@ -1,7 +1,12 @@
 package com.niit.eponlinecollaboration.initializer;
 
-import com.niit.eponlinecollaboration.config.*;
+
+import javax.servlet.Filter;
+
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+import com.niit.eponlinecollaboration.config.MvcConfig;
+import com.niit.eponlinecollaboration.filter.CrosFilter;
 public class MvcWebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     @Override
@@ -17,6 +22,11 @@ public class MvcWebApplicationInitializer extends AbstractAnnotationConfigDispat
     @Override
     protected String[] getServletMappings() {
         return new String[] {"/"};
+    }
+    @Override
+    protected Filter[] getServletFilters()
+    {
+    	return new Filter[] {new CrosFilter()};
     }
 
 }
